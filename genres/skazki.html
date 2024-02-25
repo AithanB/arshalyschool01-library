@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArshalySchool01 Library</title>
+    <link rel="stylesheet" href="../css/setup.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/search-page.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        :root {
+	        --light-color: #EDEDED;
+	        --dark-color: #191919;
+	        --primary-color: #2b4c9f;
+        }
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comfortaa', sans-serif;
+            background-color: var(--light-color);
+        }
+
+        @media (max-width: 1100px) {
+            .books-handler {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 750px) {
+            .logo__text {
+                display: none;
+            }
+            .nav__item {
+                color: var(--light-color);
+            }
+            .search-bar {
+                max-width: 500px;
+            }
+            .books-handler {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 650px) {
+            .header {
+                padding: 20px 10px;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .nav__item {
+                font-size: 24px;
+            }
+            .search-bar {
+                max-width: 300px;
+            }
+            .search-bar input[type="text"] {
+                padding: 0px 5px;
+            }
+            .search-bar__button {
+                width: 20%;
+            }
+        }
+
+        @media (max-width:350px) {
+            .nav__item {
+                font-size: 16px;
+            }
+            .search-bar {
+                max-width: 250px;
+            }
+            .books-handler {
+                gap: 0;
+            }
+            .book-container {
+                width: 200px;
+                height: 250px;
+                padding: 20px;
+            }
+            .book__link {
+                font-size: 24px;
+            }
+            .book__author {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img class="logo__img" src="../img/logo.png">
+            <h1 class="logo__text">ArshalySchool 1</h1>
+        </div>
+        <div class="nav">
+            <a href="../about.html" class="nav__item">О Школе</a>
+            <a href="../main.html" class="nav__item">Главная</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <form class="search-bar">
+            <input type="text" id="searchInput" placeholder="Поиск...">
+            <button class="search-bar__button" type="button" onclick="searchBooks()">
+                <img src="../img/icons/search-icon.svg">
+            </button>
+        </form>
+
+        <h2 class="books-genre-title">Сказки</h2>
+
+        <div class="books-handler">
+            <div class="book-container" id="bookContainer">
+                <a href="../books/v-a-zhukovskii-skazka-o-tsare-berendee.html" class="book__link">
+                    <p class="book__name">Сказка о царе Берендее</p>
+                    <p class="book__author">В.А Жуковский</p>
+                </a>
+            </div>
+            <div class="book-container" id="bookContainer">
+                <a href="../books/g-h-andersen-shezhnaya-koroleva.html" class="book__link">
+                    <p class="book__name">Снежная Королева</p>
+                    <p class="book__author">Г.Х. Андерсен</p>
+                </a>
+            </div>
+            <div class="book-container" id="bookContainer">
+                <a href="../books/a-s-pushkin-skazka-o-mertvoi-carevne-i-semi-bogaterayh.html" class="book__link">
+                    <p class="book__name">Сказка о мертвой царевне и семи богатырях</p>
+                    <p class="book__author">А.С Пушкин</p>
+                </a>
+            </div>
+            <div class="book-container" id="bookContainer">
+                <a href="../books/o-uaild-solovei-i-roza.html" class="book__link">
+                    <p class="book__name">Соловей и Роза</p>
+                    <p class="book__author">О. Уайльд</p>
+                </a>
+            </div>
+            <div class="book-container" id="bookContainer">
+                <a href="../books/e-t-a-gofman-shhelkynchik-i-myshinyj-korol.html" class="book__link">
+                    <p class="book__name">Щелкунчик и Мышиный король</p>
+                    <p class="book__author">Э.Т.А Гофман</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArshalySchool01 Library</title>
+    <link rel="stylesheet" href="../css/setup.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/book-page.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        :root {
+	        --light-color: #EDEDED;
+	        --dark-color: #191919;
+	        --primary-color: #2b4c9f;
+        }
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comfortaa', sans-serif;
+            background-color: var(--light-color);
+            overflow-x: hidden;
+        }
+
+        .container {
+            min-width: 90svw;
+        }
+
+        @media (max-width: 850px) {
+            .card-content {
+                flex-direction: column;
+                margin: 5svh 0;
+            }
+            .card-left {
+                max-width: 100%;
+                padding: 40px;
+                background-color: transparent;
+            }
+            .book-title {
+                font-size: 6svw;
+            }
+            .book-author {
+                font-size: 3.5svw;
+            }
+            .book-description {
+                font-size: 3.5svw;
+            }
+            .card-right {
+                padding: 40px;
+                gap: 40px 0;
+                border: none;
+                background-color: transparent;
+            }
+            .download-btn,
+            .read-btn {
+                padding: 35px 55px;
+                font-size: 3.5svw;
+            }
+        }
+
+        @media (max-width: 750px) {
+            .logo__text {
+                display: none;
+            }
+        }
+
+        @media (max-width: 680px) {
+            .header {
+                padding: 20px 10px;
+            }
+            .nav__item {
+                color: var(--light-color);
+            }
+            .nav__item::after {
+                display: none;
+            }
+            .card-left {
+                padding: 15px;
+            }
+            .book-title {
+                font-size: 8svw;
+            }
+            .book-author {
+                font-size: 5.5svw;
+            }
+            .book-description {
+                font-size: 4.5svw;
+            }
+            .card-right {
+                padding: 15px;
+            }
+            .download-btn,
+            .read-btn {
+                font-size: 4.5svw;
+            }
+            .src {
+                font-size: 4.5svw;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .nav__item {
+                font-size: 24px;
+            }
+        }
+
+        @media (max-width: 350px) {
+            .nav__item {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img class="logo__img" src="../img/logo.png">
+            <h1 class="logo__text">ArshalySchool 1</h1>
+        </div>
+        <div class="nav">
+            <a href="../about.html" class="nav__item">О Школе</a>
+            <a href="../main.html" class="nav__item">Главная</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="card-content">
+                <div class="card-left">
+                    <h2 class="book-title">Соловей и роза</h2>
+                    <p class="book-author">О. Уайльд</p>
+                    <div class="book-description">
+                        <p>
+							В сказке Соловей, уверовав в искренность чувств Студента, птица решает помочь ему добыть красную розу. Однако, когда они находят нужный куст, выясняется, что из-за суровой зимы там нет роз. Тем не менее, есть один жестокий способ, чтобы получить единственную красную розу: Соловею придется петь всю ночь перед розовым кустом и пронзить свое сердце острым шипом. Эта жертва оказывается тщетной, поскольку девушка предпочитает драгоценные камни, а студент теряет веру в любовь.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-right">
+                    <a href="./pdf/O_Uajld_Solovei_I_Roza.pdf" class="download-btn pdf" download>Скачать PDF</a>
+                    <a href="./epub/O_Uajld_Solovei_I_Roza.epub" class="download-btn epub" download>Скачать EPUB</a>
+                    <a href="./fb2/O_Uajld_Solovei_I_Roza.fb2" class="download-btn fb2" download>Скачать FB2</a>
+                    <a href="https://ru.wikisource.org/wiki/%D0%A1%D0%BE%D0%BB%D0%BE%D0%B2%D0%B5%D0%B9_%D0%B8_%D1%80%D0%BE%D0%B7%D0%B0_(%D0%A3%D0%B0%D0%B9%D0%BB%D1%8C%D0%B4;_%D0%A1%D0%B0%D1%85%D0%B0%D1%80%D0%BE%D0%B2)/1908_(%D0%92%D0%A2:%D0%81)" class="read-btn" target="_blank">Читать<br>(сторонний ресурс)</a>
+                </div>                
+            </div>
+            <p class="src">Источники: <a href="https://litrika.ru/oskar-uajld-solovej-i-roza-skachat/" target="_blank">litrika.ru</a> (pdf, epub, fb2), <a href="https://ru.wikisource.org/wiki/%D0%A1%D0%BE%D0%BB%D0%BE%D0%B2%D0%B5%D0%B9_%D0%B8_%D1%80%D0%BE%D0%B7%D0%B0_(%D0%A3%D0%B0%D0%B9%D0%BB%D1%8C%D0%B4;_%D0%A1%D0%B0%D1%85%D0%B0%D1%80%D0%BE%D0%B2)/1908_(%D0%92%D0%A2:%D0%81)" target="_blank">ru.wikisource.org</a> (Ссылка на содержание)</p>
+        </div>
+    </main>
+
+</body>
+</html>

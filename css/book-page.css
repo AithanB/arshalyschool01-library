@@ -1,0 +1,107 @@
+.card-content {
+	display: flex;
+	margin: 15svh 0;
+}
+
+.card-left {
+	max-width: 70%;
+	padding: 15px;
+	background-color: #ffffff00;
+}
+
+.book-title {
+	font-size: 3.5svw;
+	font-weight: 700;
+	padding-bottom: 20px;
+}
+
+.book-author {
+	font-size: 1.5svw;
+	color: #696969;
+	padding-bottom: 40px;
+}
+
+.book-description {
+	line-height: 1.5;
+	font-size: 1.5svw;
+}
+
+.card-right {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	gap: 20px 0;
+}
+
+.download-btn,
+.read-btn {
+	padding: 25px 45px;
+	width: 90%;
+	
+	text-align: center;
+	font-size: 1.5svw;
+	color: var(--primary-color);
+	font-family: 'Comfortaa', sans-serif;
+
+	background-color: transparent;
+	border: var(--primary-color) 2px solid;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+.epub:hover, .fb2:hover {
+	color: var(--light-color);
+	background-color: #1b3065;
+	border-color: #1b3065;
+}
+
+.pdf {
+	color: #9f2b2b;
+	border: #9f2b2b 2px solid;
+}
+
+.pdf:hover {
+	background-color: #9f2b2b;
+	color: var(--light-color);
+}
+
+.read-btn {
+	background-color: var(--primary-color);
+	border: none;
+	color: var(--light-color);
+	transition: all .3s;
+}
+
+.read-btn:hover {
+	background-color: #1b3065;
+}
+
+.book-content {
+	display: flex;
+	flex-direction: column;
+	margin: 120px 0;
+}
+.book-content__title {
+	font-size: 64px;
+	text-align: center;
+	margin: 40px 0;
+}
+.book-content__subtitle {
+	font-size: 32px;
+	text-align: center;
+	margin: 20px 0;
+}
+.book-content__paragraph {
+	font-size: 24px;
+	line-height: 1.5;
+	white-space: pre-wrap;
+	font-family: 'Comfortaa', sans-serif;
+	margin: 20px 0;
+}
+.src {
+	font-size: 1.5svw;
+	margin-bottom: 5svh;
+}

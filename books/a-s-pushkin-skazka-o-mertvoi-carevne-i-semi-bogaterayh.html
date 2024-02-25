@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArshalySchool01 Library</title>
+    <link rel="stylesheet" href="../css/setup.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/book-page.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        :root {
+	        --light-color: #EDEDED;
+	        --dark-color: #191919;
+	        --primary-color: #2b4c9f;
+        }
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comfortaa', sans-serif;
+            background-color: var(--light-color);
+            overflow-x: hidden;
+        }
+
+        .container {
+            min-width: 90svw;
+        }
+
+        @media (max-width: 850px) {
+            .card-content {
+                flex-direction: column;
+                margin: 5svh 0;
+            }
+            .card-left {
+                max-width: 100%;
+                padding: 40px;
+                background-color: transparent;
+            }
+            .book-title {
+                font-size: 6svw;
+            }
+            .book-author {
+                font-size: 3.5svw;
+            }
+            .book-description {
+                font-size: 3.5svw;
+            }
+            .card-right {
+                padding: 40px;
+                gap: 40px 0;
+                border: none;
+                background-color: transparent;
+            }
+            .download-btn,
+            .read-btn {
+                padding: 35px 55px;
+                font-size: 3.5svw;
+            }
+        }
+
+        @media (max-width: 750px) {
+            .logo__text {
+                display: none;
+            }
+        }
+
+        @media (max-width: 680px) {
+            .header {
+                padding: 20px 10px;
+            }
+            .nav__item {
+                color: var(--light-color);
+            }
+            .nav__item::after {
+                display: none;
+            }
+            .card-left {
+                padding: 15px;
+            }
+            .book-title {
+                font-size: 8svw;
+            }
+            .book-author {
+                font-size: 5.5svw;
+            }
+            .book-description {
+                font-size: 4.5svw;
+            }
+            .card-right {
+                padding: 15px;
+            }
+            .download-btn,
+            .read-btn {
+                font-size: 4.5svw;
+            }
+            .src {
+                font-size: 4.5svw;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .nav__item {
+                font-size: 24px;
+            }
+        }
+
+        @media (max-width: 350px) {
+            .nav__item {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img class="logo__img" src="../img/logo.png">
+            <h1 class="logo__text">ArshalySchool 1</h1>
+        </div>
+        <div class="nav">
+            <a href="../about.html" class="nav__item">О Школе</a>
+            <a href="../main.html" class="nav__item">Главная</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="card-content">
+                <div class="card-left">
+                    <h2 class="book-title">Сказка о мертвой царевне и семи богатырях</h2>
+                    <p class="book-author">А.С. Пушкин</p>
+                    <div class="book-description">
+                        <p>
+							«Ска́зка о мёртвой царе́вне и о семи́ богатыря́х» — сказка А. С. Пушкина. Написана осенью 1833 года в Большом Болдино. Является самостоятельным авторским литературным произведением, написанным по мотивам русской народной сказки.
+                        </p>
+						<a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BA%D0%B0%D0%B7%D0%BA%D0%B0_%D0%BE_%D0%BC%D1%91%D1%80%D1%82%D0%B2%D0%BE%D0%B9_%D1%86%D0%B0%D1%80%D0%B5%D0%B2%D0%BD%D0%B5_%D0%B8_%D0%BE_%D1%81%D0%B5%D0%BC%D0%B8_%D0%B1%D0%BE%D0%B3%D0%B0%D1%82%D1%8B%D1%80%D1%8F%D1%85" target="_blank">-Википедия</a>
+                    </div>
+                </div>
+                <div class="card-right">
+                    <a href="./pdf/A_S_Pushkin_Skazka_O_Mertvoi_Carevne_I_Semi_Bogateryah.pdf" class="download-btn pdf" download>Скачать PDF</a>
+                    <a href="./epub/A_S_Pushkin_Skazka_O_Mertvoi_Carevne_I_Semi_Bogateryah.epub" class="download-btn epub" download>Скачать EPUB</a>
+                    <a href="./fb2/A_S_Pushkin_Skazka_O_Mertvoi_Carevne_I_Semi_Bogateryah.fb2" class="download-btn fb2" download>Скачать FB2</a>
+                    <a href="https://www.culture.ru/poems/4449/skazka-o-mertvoi-carevne-i-o-semi-bogatyryakh" class="read-btn" target="_blank">Читать<br>(сторонний ресурс)</a>
+                </div>                
+            </div>
+            <p class="src">Источники: <a href="https://litrika.ru/aleksandr-pushkin-skazka-o-myortvoj-carevne-i-o-semi-bogatyryax/" target="_blank">litrika.ru</a> (pdf, epub, fb2), <a href="https://www.culture.ru/poems/4449/skazka-o-mertvoi-carevne-i-o-semi-bogatyryakh" target="_blank">culture.ru</a> (Ссылка на содержание)</p>
+        </div>
+    </main>
+
+</body>
+</html>
